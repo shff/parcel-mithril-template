@@ -2,6 +2,7 @@
   "presets": ["env"],
   "plugins": [
     ["transform-react-jsx", { "pragma": "m" }],
-    "transform-runtime"
+    "transform-runtime",
+    "atomizer"
   ]
 }
