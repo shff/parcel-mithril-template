@@ -30,6 +30,7 @@
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.9.1",
     "eslint-watch": "^3.1.5",
     "husky": "^0.14.3",
     "jest": "^23.1.0",
@@ -57,7 +58,8 @@
       "eslint:recommended",
       "plugin:promise/recommended",
       "plugin:jest/recommended",
-      "airbnb-base"
+      "airbnb-base",
+      "plugin:react/recommended"
     ],
     "plugins": [
       "promise",
@@ -88,7 +90,8 @@
       "promise/prefer-await-to-then": "error",
       "no-loops/no-loops": 2,
       "indent": "off",
-      "import/no-unresolved": "off"
+      "import/no-unresolved": "off",
+      "react/react-in-jsx-scope": "off"
     }
   },
   "stylelint": {
