@@ -4,6 +4,7 @@
     "build": "parcel build app/index.html --public-url .",
     "serve": "parcel app/index.html --open",
     "lint": "eslint app/**/*.js app/**/*.vue",
+    "lint:css": "stylelint '**/*.less' '**/*.css' --syntax less",
     "esw": "esw ./app --ext .js --ext .vue -w --color --clear",
     "test": "jest"
   },
@@ -28,7 +29,10 @@
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-watch": "^3.1.5",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-processor-html": "^1.0.0"
   },
   "browserslist": [
     "> 1%",
@@ -81,5 +85,11 @@
       "indent": "off",
       "import/no-unresolved": "off"
     }
+  },
+  "stylelint": {
+    "processors": [
+      "stylelint-processor-html"
+    ],
+    "extends": "stylelint-config-standard"
   }
 }
