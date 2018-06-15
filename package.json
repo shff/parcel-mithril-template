@@ -17,7 +17,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
-    "parcel-bundler": "^1.8.1"
+    "parcel-bundler": "^1.9.0"
   },
   "optionalDependencies": {
     "babel-eslint": "^8.2.3",
@@ -39,6 +39,20 @@
     "stylelint": "^9.2.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-processor-html": "^1.0.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "m"
+        }
+      ],
+      "transform-runtime"
+    ]
   },
   "browserslist": [
     "> 1%",
