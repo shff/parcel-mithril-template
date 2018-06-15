@@ -89,6 +89,14 @@
         "jsx": true
       }
     },
+    "globals": {
+      "document": true
+    },
+    "settings": {
+      "react": {
+        "pragma": "m"
+      }
+    },
     "rules": {
       "max-len": [
         "error",
@@ -103,9 +111,7 @@
       "promise/prefer-await-to-callbacks": "error",
       "promise/prefer-await-to-then": "error",
       "no-loops/no-loops": 2,
-      "indent": "off",
-      "import/no-unresolved": "off",
-      "react/react-in-jsx-scope": "off"
+      "react/no-deprecated": "off"
     }
   },
   "stylelint": {
