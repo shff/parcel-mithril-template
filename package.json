@@ -6,7 +6,6 @@
     "rebuild": "yarn clean && yarn build --no-cache",
     "deploy": "yarn rebuild && echo '/* /index.html 200' >| dist/_redirects && netlify -p dist",
     "clean": "rimraf dist .cache",
-    "inline": "mv dist/index.html dist/index2.html && inliner dist/index2.html > dist/index.html",
     "lint": "eslint app/**/*.js app/**/*.jsx",
     "lint:css": "stylelint '**/*.less' '**/*.css' --syntax less",
     "lint:watch": "esw ./app --ext .js --ext .jsx -w --color --clear",
@@ -21,6 +20,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "parcel-bundler": "^1.9.4",
+    "parcel-plugin-inliner": "^1.0.0",
     "parcel-plugin-purifycss": "^1.0.0"
   },
   "optionalDependencies": {
@@ -37,7 +37,6 @@
     "eslint-plugin-react": "^7.10.0",
     "eslint-watch": "^4.0.1",
     "husky": "^0.14.3",
-    "inliner": "^1.13.1",
     "jest": "^23.3.0",
     "rimraf": "^2.6.2",
     "stylelint": "^9.3.0",
