@@ -15,16 +15,16 @@
     "mithril": "^1.1.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-0",
-    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/core": "^7.3.4",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
     "parcel": "^1.11.0",
-    "parcel-plugin-inliner": "^1.0.3",
-    "parcel-plugin-purifycss": "^1.0.2"
+    "parcel-plugin-inliner": "^1.0.6",
+    "parcel-plugin-purifycss": "^1.0.5"
   },
   "optionalDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.14.0",
+    "eslint": "^5.15.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-plugin-html": "^5.0.3",
