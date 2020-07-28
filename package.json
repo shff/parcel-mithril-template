@@ -6,7 +6,7 @@
     "rebuild": "yarn clean && yarn build --no-cache",
     "deploy": "yarn rebuild && echo '/* /index.html 200' >| dist/_redirects && netlify -p dist",
     "clean": "rm -rf dist .cache",
-    "lint": "eslint app/**/*.js app/**/*.jsx",
+    "lint": "eslint app/**/*.js",
     "lint:css": "stylelint '**/*.less' '**/*.css' --syntax less",
     "lint:watch": "esw ./app --ext .js --ext .jsx -w --color --clear",
     "test": "jest",
@@ -31,6 +31,7 @@
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-no-loops": "^0.3.0",
@@ -79,11 +80,13 @@
       "eslint:recommended",
       "plugin:promise/recommended",
       "airbnb-base",
-      "plugin:react/recommended"
+      "plugin:react/recommended",
+      "plugin:cypress/recommended"
     ],
     "plugins": [
       "promise",
-      "no-loops"
+      "no-loops",
+      "cypress"
     ],
     "parserOptions": {
       "parser": "babel-eslint",
@@ -95,7 +98,8 @@
       }
     },
     "globals": {
-      "document": true
+      "document": true,
+      "cypress/globals": true
     },
     "settings": {
       "react": {
