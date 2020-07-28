@@ -9,7 +9,8 @@
     "lint": "eslint app/**/*.js app/**/*.jsx",
     "lint:css": "stylelint '**/*.less' '**/*.css' --syntax less",
     "lint:watch": "esw ./app --ext .js --ext .jsx -w --color --clear",
-    "test": "jest"
+    "test": "jest",
+    "e2e": "cypress run -C false --config video=false,integrationFolder=app,supportFile=false,pluginsFile=false,testFiles=**/*.spec.js"
   },
   "dependencies": {
     "mithril": "^2.0.4"
@@ -26,6 +27,7 @@
   },
   "optionalDependencies": {
     "babel-eslint": "^10.1.0",
+    "cypress": "^4.11.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-friendly-formatter": "^4.0.1",
