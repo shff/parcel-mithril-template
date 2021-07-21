@@ -16,7 +16,7 @@
     "mithril": "^2.0.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.2",
+    "@babel/core": "^7.14.8",
     "@babel/plugin-transform-react-jsx": "^7.13.12",
     "@babel/plugin-transform-runtime": "^7.14.2",
     "@babel/preset-env": "^7.13.8",
