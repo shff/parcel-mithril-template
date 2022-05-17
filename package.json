@@ -13,7 +13,7 @@
     "e2e": "cypress run -C false --config video=false,integrationFolder=app,supportFile=false,pluginsFile=false,testFiles=**/*.spec.js"
   },
   "dependencies": {
-    "mithril": "^2.0.4"
+    "mithril": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
