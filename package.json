@@ -39,7 +39,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-watch": "^8.0.0",
     "jasmine": "^4.6.0",
-    "stylelint": "^15.6.0",
+    "stylelint": "^15.6.1",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-processor-html": "^1.0.0"
   },
