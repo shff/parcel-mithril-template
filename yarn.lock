@@ -6107,10 +6107,10 @@ minizlib@^1.3.3:
   dependencies:
     minipass "^2.9.0"
 
-mithril@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/mithril/-/mithril-2.2.4.tgz#63f57637d914a97f7699f8c7dccac400cd887334"
-  integrity sha512-YiH3UILIw9irkxl4ulTFeBosHAZP1eo6g8W/P62hF9Awb8GBIGwGsNX7cJNujz+03axeIr/6TxX+0k96GrQvTA==
+mithril@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/mithril/-/mithril-2.2.5.tgz#fa5877e870dc47462384664942a5dabfaff22f7e"
+  integrity sha512-Bd3H/8PXDNRja9WYpYnEhoOzaI8W+ByvR4HcnTNwOtpBDFHy2fP/1sTwy/cXPugb3egFO9xli8QjU7LQiq0hKA==
 
 mixin-deep@^1.2.0:
   version "1.3.2"
